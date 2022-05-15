@@ -1,0 +1,252 @@
+input.ng-touched.ng-invalid {
+  /* border: 4px solid rgb(81, 91, 199); */
+}
+
+body.swal2-shown>[aria-hidden="true"] {
+  transition: 0.5s filter;
+  filter: blur(40px);
+}
+
+#selector {
+  
+ cursor:pointer;
+  min-width: 700px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(253, 254, 255, 0.986);
+  font-family: cursive;
+  font-style: italic;
+  font-weight: 500;
+  margin-left: 470px;
+  margin-top: 0%;
+  padding-top: 0%;
+  pointer-events: stroke;
+}
+
+.tableSug {
+
+  opacity: 90%;
+}
+
+iframe {
+  width: 200px;
+  height: 300px;
+  opacity: 80%;
+}
+
+iframe:hover {
+  opacity: 100%;
+  height: 400px;
+  width: 700px;
+}
+
+#left-table {
+  margin-left: 20px;
+  height: fit-content;
+  padding: 5px;
+  text-decoration: solid;
+  text-transform: capitalize;
+  text-size-adjust: inherit;
+  display: flexbox;
+  /* display: inline; */
+  background-color: rgba(0, 0, 0, 0.591);
+  overflow-y: visible;
+  overflow-x: visible;
+  /* position: relative; */
+  position:absolute;
+  z-index:5;
+  cursor: pointer;
+  pointer-events: fill;
+}
+
+#tables {
+  display: flex;
+  flex-direction: col;
+  gap: 30px;
+}
+
+#right-table {
+  /* display:grid; */
+  /* position:sticky; */
+  /* display: flexbox; */
+}
+
+#stockForm {
+  display: flex;
+  flex-direction: row;
+  ;
+  gap: 10px;
+  height: 50px;
+  margin-left: 470px;
+}
+
+
+
+#search {
+  padding-top: 2px;
+  border-radius: 5%;
+  width: 700px;
+  /* background-color: rgba(174, 174, 174, 0.744);
+  color: rgb(0, 0, 0); */
+  box-sizing: border-box;
+  font-size: larger;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  /* font-weight: bold; */
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#search:hover {
+  /* width: 150%;
+ height:150%; */
+}
+
+#table {
+  border: 1px solid rgb(228, 224, 224);
+  margin-left: 400px;
+  /* align-content: center; */
+  position: relative;
+  /* background-color: rgba(30, 131, 50, 0.963); */
+}
+
+table {
+  border-collapse: collapse;
+  /* width: 100%; */
+}
+
+
+th,
+td {
+  width: 120px;
+  padding: 1px;
+  text-align: center;
+  color: #fdfeff;
+  /* font-size: larger;
+  font-weight: bold; */
+  font-family: cursive;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.545);
+  border: 0.3px solid rgb(221, 221, 221,0.4);
+}
+ th{
+   background-color: rgba(0, 0, 139, 0.559);
+   /* background-color: #500d77a0; */
+ }
+td:hover {
+  background-color: rgba(194, 194, 194, 0.237) !important;
+  color: rgb(0, 0, 0);
+}
+
+.positive {
+  color: rgb(22, 218, 22);
+}
+
+.negative {
+  color: rgb(206, 25, 25);
+}
+option {
+  cursor: pointer;
+}
+
+.addButton {
+  background-color: rgba(22, 177, 22, 0.685);
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.deleteButton {
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.575);
+  color: aliceblue;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#left {
+  flex: 1;
+  width: 100%;
+  gap: 10px;
+}
+
+#right {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  gap: 10px;
+}
+
+
+button {
+  cursor: progress;
+  border-radius: 18%;
+  max-height: 30px;
+  width: max-content * 110%;
+  background-color: rgba(74, 214, 55, 0.991);
+  color: aliceblue;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#container {
+  height: 100px;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+  /* margin-top: 30%;; */
+  min-width: 310px;
+  max-width: 700px;
+  margin: 1em auto;
+  background-color: rgb(199, 175, 175);
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #201919;
+  margin: 10px auto;
+  text-align: center;
+  /* width: 100%; */
+  max-width: 500px;
+  background-color: #555;
+}
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8b6;
+}
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff9c;
+}
+
+#stockForm {
+  padding-top: 40px;
+  width: 100%;
+  /* border-color: cyan; */
+  
+  /* background-color: #f1f7ff; */
+}

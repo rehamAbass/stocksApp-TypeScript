@@ -1,0 +1,94 @@
+<div id="container">
+  <div id="searchAndTable">
+    <div class="searchAndSelect">
+      //-----------------------------------------------------------------------------------
+    <form 
+    id="stockForm" [formGroup]="stockForm" (ngSubmit)="search()" >
+      <div>
+        <input type="text" id="search"
+        formControlName="search" 
+        required minlength="1"
+        placeholder="app,fb,goog,ea,gold,rada,sgbk,shbi,wba" /> 
+        <div *ngIf="stockForm.get('search').touched && stockForm.get('search').hasError('required')"></div>
+        <div *ngIf = "touched()">
+        </div>
+      </div>
+      <button class = "button" type="submit" [disabled]="!stockForm.valid">
+        search
+      </button>
+    </form>
+
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+    <form  [formGroup]="selectForm" (ngSubmit)="reham()" >
+      <select formControlName="selectedS"   id = "selector" type="submit">
+        <optgroup  
+          *ngFor="let  x of filteredSymbols" >
+          <option  [value]= "valueSelected" (onClick)="reham()">
+             {{x.symbol}} - {{x.name}}
+          </option>
+        </optgroup>
+      </select>      
+</form>
+<!-- ---------------------------------------------------------------------------------- -->
+  </div>
+
+    <br>
+    <div id="tables">
+    <div id="left-table" class="embed-responsive embed-responsive-16by9">
+  
+<iframe src="https://en.wikipedia.org/wiki/Forex"
+  frameborder="0" marginheight="0" marginwidth="0"
+  width="100%" height="100%" scrolling="auto">
+</iframe>
+          </div>
+
+    <div id="right-table" >
+      <table id="table" >
+        <thead>
+          <tr>
+            <th>symbol</th>
+            <th>Name</th>
+            <th>Previous Close</th>
+            <th>Year low</th>
+            <th>Year High</th>
+            <th>Change from year Low</th>
+            <th>Change from year High</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of StockList">
+            <td>{{ item.symbol }}</td>
+            <td>{{ item.shortName }}</td>
+            <td>{{ item.regularMarketPreviousClose }}$</td>
+            <td>{{ item.fiftyTwoWeekLow }}$</td>
+            <td>{{ item.fiftyTwoWeekHigh }}$</td>
+            <td
+              [ngClass]="{'positive' : item.fiftyTwoWeekLowChange  >= 0,'negative' : item.fiftyTwoWeekLowChange < 0 }">
+              {{ item.fiftyTwoWeekLowChange }}$</td>
+            <td
+              [ngClass]="{'positive' : item.fiftyTwoWeekHighChange  >= 0,'negative' : item.fiftyTwoWeekHighChange < 0}">
+              {{ item.fiftyTwoWeekHighChange}}$</td>
+            <td>
+              <button type="button" class="addButton" 
+                *ngIf="(!isInsideGraph(item))&&!reachedMaxStocks"
+                (click)="add(item)">Add</button>
+              <button type="button" class="deleteButton" *ngIf="isInsideGraph(item)" (click)="remove(item)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+  </div>
+  <div id="right" >
+    <figure class="highcharts-figure">
+      <div id="container2" ></div>
+    </figure>
+  </div>
+</div>
+
+
+<!--       *(ngModel)="selected"
+      (formGroup)="selectedSymbol"  -->

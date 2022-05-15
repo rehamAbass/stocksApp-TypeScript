@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background-image: url('./app/imgs/22.png');
+  background-size:contain;
+  
+   background: linear-gradient(to left, 
+      rgba(96, 96, 96, 0.609) 0%,
+      rgba(255, 255, 255, 0.982) 30%,
+      rgba(9, 0, 40, 0.881) 90%); 
+} 
+
+
+.toolbar {
+  width:100%;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  align-content: space-between;
+  margin-top: 1%;
+  background-color: rgba(0, 0, 0, 0.92);
+  box-shadow: 15px 15px 5px #ffffff;
+  opacity:50%;
+  /* transition-duration: 0.5s; */
+}
+
+.toolbar:hover{
+  opacity:100%;
+}
+.logo:hover {
+  /* opacity: 0.50; */
+  box-shadow: 4px 4px 4px  #f8f8f8;
+}
+
+.content {
+  display: flex;
+  /* max-width: 960px; */
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.708);
+}
+
+.a1 {
+
+  display: flex;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+iframe {
+  width: 400px;
+  ;
+  height: 150px;
+  ;
+  border: none;
+}
+
+#tube {
+  margin-left: 20px;
+  overflow-y: auto;
+  overflow-x: auto;
+  /* resize: both; */
+  height:210px;
+  position: relative;
+  z-index: 5;
+}
+
+#whats {
+  color: #201919;
+  /* border-radius: 50%; */
+}
+
+.logo {
+  border-radius: 2%;
+  flex-direction: column;
+  width: 55px;
+  height: 45px;
+  /* box-shadow: 1px 1px 1px 1px #000000; */
+}
+
+a1:hover {
+  color: #fafafa;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
