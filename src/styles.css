@@ -1,18 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-  background-image: url('./app/imgs/22.png');
-  background-size:contain;
-  
-   background: linear-gradient(to left, 
+  background-image: url('./app/imgs/444.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: outerHeight outerWidth; */
+    /* background-size: var(outerWidth) var(outerHeight); */
+    /* background: linear-gradient(to left,
       rgba(96, 96, 96, 0.609) 0%,
       rgba(255, 255, 255, 0.982) 30%,
-      rgba(9, 0, 40, 0.881) 90%); 
+      rgba(9, 0, 40, 0.881) 90%);
+        */
 } 
-
+/* $windows.size */
 
 .toolbar {
-  width:100%;
+  width: outerWidth;
+    /* width:100%; */
   height: 55px;
   display: flex;
   flex-direction: row;
@@ -20,9 +24,9 @@ body {
   gap: 40px;
   align-content: space-between;
   margin-top: 1%;
-  background-color: rgba(0, 0, 0, 0.92);
-  box-shadow: 15px 15px 5px #ffffff;
-  opacity:50%;
+  background-color: rgba(0, 0, 0, 1);
+    box-shadow: 15px 15px 5px #0000009b;
+    opacity: 90%;
   /* transition-duration: 0.5s; */
 }
 

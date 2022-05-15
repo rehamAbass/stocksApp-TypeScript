@@ -252,8 +252,8 @@ export class AppComponent {
     errorMsg(title,txt) {
       Swal.fire({
         icon: "error",
-        title: title,
-        text: txt,
+        title: "Api doesnt allow us to fetch data check the cors permissions.. ",
+        text: title,
         backdrop: `rgba(0,0,0,0.7)`,
         iconColor: `rgba(100,0,100,0.7)`,
       })
