@@ -10,8 +10,8 @@ export class StocksService {
   getStocks(parameters: string) {
     const headers = new HttpHeaders()
       .set('Content-Type', 'application/json')
-      .set('Access-Control-Allow-Origin', '*')
-      .set('Access-Control-Allow-Credentials', 'true');
+      // .set('Access-Control-Allow-Origin', '*')
+      // .set('Access-Control-Allow-Credentials', 'true');
 
     let params = new HttpParams();
     params = params.append('symbols', parameters);
