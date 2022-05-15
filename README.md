@@ -8,5 +8,5 @@ I hope to impress U
   #  1.  npm install 
   #  2.  ng serve
 
- examples to input : 
+ examples of input : 
 ## aapl,FB,BTC-USD,VIR,ETH-USD,GOOG,FL
