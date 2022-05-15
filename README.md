@@ -1,5 +1,5 @@
 👋  hello to my repository glad to see U here 😊 
-my name is Reham Abass
+my name is Reham Abass.
 Latelly I have learned typeScript , this is my first app in Angular 9
 I hope to impress U 
 
